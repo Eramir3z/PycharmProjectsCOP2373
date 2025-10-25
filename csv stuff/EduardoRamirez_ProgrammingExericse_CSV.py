@@ -1,6 +1,6 @@
 import csv
 
-def main():
+def create_csvfile():
 # create an empty list
     grades_list = []
 # get the number of students and loop it based on the number of students
@@ -19,4 +19,4 @@ def main():
         csv_writer.writerow(["First Name", "Last Name", "Exam 1", "Exam 2", "Exam 3"])
         csv_writer.writerows(grades_list)
 # run main
-main()
+create_csvfile()
