@@ -1,6 +1,6 @@
 import csv
 # open and read the csv file
-def main():
+def read_csvfile():
     with open("grades.csv", "r", newline="") as csvfile:
         csv_reader = csv.reader(csvfile)
 # iterator into list
@@ -13,6 +13,5 @@ def main():
             first, last, exam1, exam2, exam3 = row
 # format data exactly like header
             print(f"{first:<15}{last:<15}{exam1:<10}{exam2:<10}{exam3:<10}")
-# run main
-if __name__ == '__main__':
-    main()
+# run function
+read_csvfile()
