@@ -18,5 +18,5 @@ def create_csvfile():
         csv_writer = csv.writer(csvfile)
         csv_writer.writerow(["First Name", "Last Name", "Exam 1", "Exam 2", "Exam 3"])
         csv_writer.writerows(grades_list)
-# run main
+# run function
 create_csvfile()
